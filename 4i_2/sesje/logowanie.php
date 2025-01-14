@@ -22,7 +22,7 @@
             'anna' => 'ania123',
             'katarzyna123' => 'kasia123',
             'Jan' => 'kowalski',
-            'adam' => 'Luncia15',
+            'adam' => 'adam123',
             'Marek' => 'Jarek'
 
         );///tablica z loginami i hasłami
