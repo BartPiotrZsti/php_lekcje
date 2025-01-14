@@ -7,5 +7,24 @@
 </head>
 <body>
     
+    <?php
+        session_start(); // Rozpocznij sesję
+
+        // Sprawdza czy użytkownik jest zalogowany
+        if(!isset($_SESSION['logowanie'])){
+            header('Location: logowanie.php'); // Przekieruje na stronę logowania
+            exit();
+        }
+
+        // Usuwa zmienną sesji
+        unset($_SESSION['logowanie']);
+
+        // Zniszcza sesje
+        session_destroy();
+
+        echo 'Zostałeś wylogowany/a.<br>';
+
+    ?>
+
 </body>
 </html>
